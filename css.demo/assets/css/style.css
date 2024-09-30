@@ -1,0 +1,43 @@
+/* ------------css demo-------------- */
+
+
+/*  ---------------Box Sizing-----------------  */
+
+/*------- Color Scheme------
+Main Color - #212EF5
+Secondary - #4A4D75
+*/
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  
+  body{
+    font-family: "Didact Gothic", sans-serif;
+  }
+
+  main{
+    
+  }
+  
+  
+  
+
+
+  header.primary{
+    background-color: #212EF5;
+    color: #ffffff;
+    text-shadow:1px 1px #000000
+  }
+
+
+
+body{
+    background-color:aquamarine;
+}
