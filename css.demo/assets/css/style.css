@@ -6,6 +6,9 @@
 /*------- Color Scheme------
 Main Color - #212EF5
 Secondary - #4A4D75
+#549F93
+#258EA6
+#9FAF90
 */
 
 html {
@@ -40,8 +43,10 @@ html {
 
 
   header.primary{
-    background-color: #212EF5;
-    color: #ffffff;
+    background-color:#4A4D75;
+    
+background-image: url("data:image/svg+xml,%3Csvg width='32' height='64' viewBox='0 0 32 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 28h20V16h-4v8H4V4h28v28h-4V8H8v12h4v-8h12v20H0v-4zm12 8h20v4H16v24H0v-4h12V36zm16 12h-4v12h8v4H20V44h12v12h-4v-8zM0 36h8v20H0v-4h4V40H0v-4z' fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+    color: #000000;
     text-shadow:20px 20px #000000
     padding-top: 40px;
     padding-right: 40px;
@@ -55,7 +60,7 @@ html {
   }
 
 header.primary h1{
-  background:#212EF5 ;
+  background:#4A4D75 ;
   font-size: 2.4rem;
   margin: 20px 0 0 ;
 }
@@ -80,6 +85,7 @@ header.primary nav ul{
   padding: 10px 0;
   margin:auto;
 }
+
 header.primary nav ul li{
   list-style-type:none;
 }
@@ -101,7 +107,7 @@ header.primary nav ul li a:hover{
   line-height: 1.4;
 }
 #content h2{
-  color: #212EF5;
+  color: #000000;
   border-bottom: 1px dotted #4A4D75;
 }
 
@@ -133,10 +139,40 @@ header.primary nav ul li a:hover{
 #blog .post a{
   color:#212EF5
 }
+aside[role = "complementary"]{
+  background: #9FAF90;
+  padding: 40px 0;
 
+}
+
+aside .container{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  gap:40px;
+
+}
+aside article.widget a{
+  color:#000000;
+}
+aside article.widget a:last-of-type{
+  display:block;
+  margin-top:20px;
+  text-align:right;
+}
+aside article.widget footer{
+  display:none;
+}
+#colophone{
+  background-color:#549F93;
+  padding: 5px;
+  color:#000000;
+  font-size: 1.4rem;
+  text-align:center;
+}
 
 body{
-    background-color:aquamarine;
+    background-color:#9FAF90;
 }
 
 /*----------------Media Queries --------------*/
@@ -148,7 +184,7 @@ body{
     max-width: 200px;
     margin: 10px auto;
   }
-  header.primary nav a{
-    display:block;
+  #blog{
+  flex-direction:column;
   }
 }
