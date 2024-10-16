@@ -70,7 +70,8 @@ img-left{
 background-image: url("data:image/svg+xml,%3Csvg width='32' height='64' viewBox='0 0 32 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 28h20V16h-4v8H4V4h28v28h-4V8H8v12h4v-8h12v20H0v-4zm12 8h20v4H16v24H0v-4h12V36zm16 12h-4v12h8v4H20V44h12v12h-4v-8zM0 36h8v20H0v-4h4V40H0v-4z' fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
     color: #000000;
     text-shadow:20px 20px #000000
-    padding-top: 40px;
+    
+    padding-top 40px;
     padding-right: 40px;
     padding-bottom: 40px;
     padding-left: 40px;
@@ -158,11 +159,11 @@ header.primary nav ul li a:hover{
   margin:0;
 }
 #blog figcaption{
-  text-transform: uppercase;
-  color: darkblue;
+  text-transform: lowercase;
+  color: red;
 }
 #blog .post a{
-  color:#212EF5
+  color: red; 
 }
 #practice h2{
   color:#4A4D75;
@@ -221,9 +222,10 @@ dl dd{
   margin:0;
   
 }
+
 dd+dt{
-  margin-bottom:20px;
-  color:orange;
+  margin-bottom:10px;
+  color:rgb(255, 0, 0);
 }
 #practice blockquote{
   border:4px double #549F93;
