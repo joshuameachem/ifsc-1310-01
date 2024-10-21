@@ -70,16 +70,15 @@ img-left{
 background-image: url("data:image/svg+xml,%3Csvg width='32' height='64' viewBox='0 0 32 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 28h20V16h-4v8H4V4h28v28h-4V8H8v12h4v-8h12v20H0v-4zm12 8h20v4H16v24H0v-4h12V36zm16 12h-4v12h8v4H20V44h12v12h-4v-8zM0 36h8v20H0v-4h4V40H0v-4z' fill='%239C92AC' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
     color: #000000;
     text-shadow:20px 20px #000000
-    
-    padding-top 40px;
+    /*--------Long Form
+    padding-top: 40px;
     padding-right: 40px;
     padding-bottom: 40px;
     padding-left: 40px;
+    -------*/
     padding: 40px;
     padding: 20px 40px 20px 40px;
     padding: 20px 40px;
-
-    margin:0;
   }
 
 header.primary h1{
@@ -140,7 +139,7 @@ header.primary nav ul li a:hover{
   flex-direction: row;
   gap:2rem;
   border-top: 1px solid #000000
-  border-bott: 1px solid #cccccc
+  border-bottom: 1px solid #000000;
   padding: 20px 0 0 0;
 }
 
@@ -152,7 +151,7 @@ header.primary nav ul li a:hover{
   transition:.4s;
 }
 #blog article.post:hover {
-  box-shadow: 0 8px 16px rgba(0,0,0,.6);
+  box-shadow: 0 8px 16px rgba(1, 0, 0, 0);
  
 }
 #blog figure{
@@ -163,10 +162,10 @@ header.primary nav ul li a:hover{
   color: red;
 }
 #blog .post a{
-  color: red; 
+  color: rgb(255, 0, 0); 
 }
 #practice h2{
-  color:#4A4D75;
+  color: black;
   border-bottom: 1px dotted #000000;
 }
 #practice a{
@@ -176,9 +175,12 @@ header.primary nav ul li a:hover{
   text-decoration:none;
 }
 #practice h3{
-  border-left: 7.55px solid #549F93;
+  border-left: 7.55px solid #4A4D75;
+  color: black;
   padding: 5px 0 5px 10px;
 }
+
+
 table{
   width: 100%;
   border: 1px solid #000000;
@@ -206,7 +208,7 @@ td:nth-child(2),td:nth-child(3){
 tr:hover{
   background-color:rgba(0,0,0,0.1);
 }
-th{background-color: #ffffff;
+th{background-color: yellow;;
 color:#000000;
 padding: 5px;
 }
@@ -220,7 +222,7 @@ td{
 }
 dl dd{
   margin:0;
-  
+  color: black; 
 }
 
 dd+dt{
@@ -232,7 +234,7 @@ dd+dt{
   padding:20px 40px;
   margin: 40px 80px;
   border-radius: 30px 0;
-  background-color:#549F93;
+  background-color:midnightblue;
   color:#000000;
   line-height: 1.4;
   text-shadow: 1px 1px #000;
@@ -254,6 +256,8 @@ aside .container{
   flex-direction:row;
   justify-content: space-around;
   gap:40px;
+  font-weight:bold;
+  background-color: midnightblue;
 
 }
 aside article.widget a{
@@ -268,7 +272,7 @@ aside article.widget footer{
   display:none;
 }
 #colophone{
-  background-color:#549F93;
+  background-color:#5d549f;
   padding: 5px;
   color:#000000;
   font-size: 1.4rem;
