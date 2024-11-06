@@ -1,0 +1,42 @@
+/*---- Color Scheme -----
+#F0DF5B
+#ADF05B
+#EBF05B
+#F0CD5B
+#6EF05B
+#EDF0AB*/
+
+
+header.primary{
+    background-color:#6EF05B;
+
+}
+
+header.primary h1{
+    background-color: #6EF05B;
+    font-size: 50px;
+    margin: 20px 0 0 ;
+}
+
+header.primary h1 a{
+    color: #000000;
+    text-decoration: none;
+}
+
+header.primary nav ul li a{
+    color: #ffffff;
+    text-decoration:none;
+    border:5px solid #000000;
+    padding: 7.5px 10px;
+    background-color: rgba(0,0,0, .4);
+    border-radius:5px;
+    transition:.10s;
+  }
+
+  header.primary nav ul{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    padding: 10px 0;
+    margin:auto;
+  }
