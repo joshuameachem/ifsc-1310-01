@@ -13,6 +13,15 @@ body {
     margin: 0; /* Optional: Remove default margin */
     padding: 0; /* Optional: Remove default padding */
   }
+  h1 {
+    background-image: url('final-v2/assets/img/Dragon_V2_interior.2.jpg');
+    background-size: cover; /* Ensures the image covers the whole element */
+    background-position: center center; /* Centers the image */
+    color: white; /* Makes the text white for visibility */
+    text-align: center; /* Centers the text */
+    padding: 50px 0; /* Adds padding for better spacing */
+    font-family: Arial, sans-serif; /* Changes the font */
+  }
 header.primary{
     background-color:#6EF05B;
 

@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
   <link href ="assets/css/style.css" rel = "stylesheet" />
+  <meta name="robots" content="noindex">
 </head>
 <body>
   <main>
@@ -120,5 +121,117 @@ On 3 June 2017, the CRS-11 capsule largely assembled from previously flown compo
       </tr>
     </tbody>
   </table>
+  <body>
+
+    <div class="slideshow-container">
+      <div class="slides">
+        <img src="assets/img/dragon-in-space.jpg" alt="Image 1">
+      </div>
+      <div class="slides">
+        <img src="assets/img/launch.jpg" alt="Image 2">
+      </div>
+      
+    
+      <!-- Navigation buttons -->
+      <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+      <button class="next" onclick="plusSlides(1)">&#10095;</button>
+    </div>
+    <script>
+      let slideIndex = 0;
+    
+      function showSlides() {
+        let slides = document.getElementsByClassName("slides");
+        if (slideIndex >= slides.length) {
+          slideIndex = 0;
+        } else if (slideIndex < 0) {
+          slideIndex = slides.length - 1;
+        }
+    
+        // Hide all slides
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+    
+        // Show the current slide
+        slides[slideIndex].style.display = "block";
+      }
+    
+      function plusSlides(n) {
+        slideIndex += n;
+        showSlides();
+      }
+    
+      // Automatically change slides every 3 seconds
+      setInterval(() => {
+        plusSlides(1);
+      }, 3000);
+    
+      // Initialize the slideshow
+      showSlides();
+    </script>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+    
+        footer {
+          background-color: #333; /* Dark background color */
+          color: white; /* White text */
+          text-align: center; /* Center text */
+          padding: 20px 0; /* Add spacing */
+          position: fixed; /* Fix footer to the bottom of the page */
+          bottom: 0;
+          width: 100%; /* Make footer span full width */
+        }
+    
+        footer a {
+          color: #00BFFF; /* Link color */
+          text-decoration: none; /* Remove underline */
+          font-weight: bold;
+        }
+    
+        footer a:hover {
+          text-decoration: underline; /* Add underline on hover */
+        }
+      </style>
+    </head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+  
+      footer {
+        background-color: black; /* Dark background color */
+        color: white; /* White text */
+        text-align: center; /* Center text */
+        padding: 1px 0; /* Add spacing */
+        position: fixed; /* Fix footer to the bottom of the page */
+        bottom: 0;
+        width: 100%; /* Make footer span full width */
+      }
+  
+      footer a {
+        color: #00BFFF; /* Link color */
+        text-decoration: none; 
+        font-weight: bold;
+      }
+  
+      footer a:hover {
+        text-decoration: underline; /* Add underline on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <footer>
+      <p>
+        Contact us: <a href="mailto:contact@example.com">Email</a>
+      </p>
+    </footer>
+
+ 
 </body>
 </html>

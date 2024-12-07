@@ -1,9 +1,9 @@
 body{
-    background-color:darkgray;
+    background-color:darkgrey;
 }
 
 img{
-    max-width:100px;
+    max-width:100%;
 }
 
 .container{
